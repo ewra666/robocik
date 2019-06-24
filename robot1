@@ -267,7 +267,7 @@ public void keyTyped(KeyEvent e)
        
         if (key == 'w')
        {
-           if(y1<0.15f)
+           if(y1<0.33f)
            {y1+=0.01f;
            kat=0;
         p_chwytak.get(macierz);
@@ -292,7 +292,7 @@ public void keyTyped(KeyEvent e)
        
          if (key == 's')
          {
-            if(y1>-0.15f)
+            if(y1>-0.33f)
             {y1-=0.01f;
             kat=0;
              p_chwytak.get(macierz);
