@@ -86,7 +86,7 @@ import com.sun.j3d.utils.geometry.Box;
         
         Appearance  wygladChwytak = new Appearance();
         wygladChwytak.setColoringAttributes(new ColoringAttributes(80.0f,80.0f,80.0f,ColoringAttributes.NICEST));
-        Box chwytak = new Box(0.3f, 0.05f,0.05f,Box.GENERATE_TEXTURE_COORDS|Box.GENERATE_NORMALS , wygladChwytak);
+        Box chwytak = new Box(0.3f, 0.03f,0.03f,Box.GENERATE_TEXTURE_COORDS|Box.GENERATE_NORMALS , wygladChwytak);
         obrot_animacja = new TransformGroup();
         obrot_animacja.setCapability(TransformGroup.ALLOW_TRANSFORM_WRITE);
         p_chwytak.set(new Vector3d(0.2f,0.0f,0.0f));  
@@ -95,7 +95,8 @@ import com.sun.j3d.utils.geometry.Box;
         wezel_scena.addChild(obrot_animacja); 
    
         Appearance  wygladnaped = new Appearance();
-        wygladnaped.setColoringAttributes(new ColoringAttributes(0.0f,0.0f,0.9f,ColoringAttributes.NICEST));
+        Texture metal = new TextureLoader("obrazki/robot.jpg",this).getTexture();
+        wygladnaped.setTexture(metal);
         Box naped = new Box(0.3f, 0.1f,0.1f,Cylinder.GENERATE_TEXTURE_COORDS|Box.GENERATE_NORMALS,wygladnaped);
         p_naped.set(new Vector3d(0.1f,0.0f,0.0f));  
         obrot_animacja2.setTransform(p_naped);
