@@ -356,7 +356,7 @@ public void keyTyped(KeyEvent e)
         macierz2.m13=y1;
         macierz2.m23=-macierz.m03*sin(kat)+macierz.m23*cos(kat);
         p_chwytak1.setTranslation(new Vector3d(0.0f,0.0f,0.0f));
-        p_chwytak1.setTranslation(new Vector3d(macierz2.m03,macierz2.m13,macierz2.m23));
+        p_chwytak1.setTranslation(new Vector3d(macierz2.m03,macierz2.m13+0.05f,macierz2.m23));
         obrot_animacja1.setTransform(p_chwytak1);
         
         p_chwytak2.get(macierz);
@@ -364,7 +364,7 @@ public void keyTyped(KeyEvent e)
         macierz2.m13=y1;
         macierz2.m23=-macierz.m03*sin(kat)+macierz.m23*cos(kat);
         p_chwytak2.setTranslation(new Vector3d(0.0f,0.0f,0.0f));
-        p_chwytak2.setTranslation(new Vector3d(macierz2.m03,macierz2.m13,macierz2.m23));
+        p_chwytak2.setTranslation(new Vector3d(macierz2.m03,macierz2.m13-0.05f,macierz2.m23));
         obrot_animacja4.setTransform(p_chwytak2);
             
             
@@ -397,7 +397,7 @@ public void keyTyped(KeyEvent e)
             macierz2.m13=y1;
             macierz2.m23=-macierz.m03*sin(kat)+macierz.m23*cos(kat);
             p_chwytak1.setTranslation(new Vector3d(0.0f,0.0f,0.0f));
-            p_chwytak1.setTranslation(new Vector3d(macierz2.m03,macierz2.m13,macierz2.m23));
+            p_chwytak1.setTranslation(new Vector3d(macierz2.m03,macierz2.m13+0.05f,macierz2.m23));
             obrot_animacja1.setTransform(p_chwytak1);
             
             p_chwytak2.get(macierz);
@@ -405,7 +405,7 @@ public void keyTyped(KeyEvent e)
             macierz2.m13=y1;
             macierz2.m23=-macierz.m03*sin(kat)+macierz.m23*cos(kat);
             p_chwytak2.setTranslation(new Vector3d(0.0f,0.0f,0.0f));
-            p_chwytak2.setTranslation(new Vector3d(macierz2.m03,macierz2.m13,macierz2.m23));
+            p_chwytak2.setTranslation(new Vector3d(macierz2.m03,macierz2.m13-0.05f,macierz2.m23));
             obrot_animacja4.setTransform(p_chwytak2);
 
 
@@ -441,7 +441,7 @@ public void keyTyped(KeyEvent e)
         macierz2.m23=-macierz.m03*sin(kat)+macierz.m23*cos(kat);
         p_chwytak1.setTranslation(new Vector3d(0.0f,0.0f,0.0f));
         p_chwytak1.mul(tmp_rot);
-        p_chwytak1.setTranslation(new Vector3d(macierz2.m03,macierz2.m13,macierz2.m23));
+        p_chwytak1.setTranslation(new Vector3d(macierz2.m03,macierz2.m13+0.05f,macierz2.m23));
         obrot_animacja1.setTransform(p_chwytak1);
         
         p_chwytak2.get(macierz);         // obrot ramieniem chwytaka
@@ -450,7 +450,7 @@ public void keyTyped(KeyEvent e)
         macierz2.m23=-macierz.m03*sin(kat)+macierz.m23*cos(kat);
         p_chwytak2.setTranslation(new Vector3d(0.0f,0.0f,0.0f));
         p_chwytak2.mul(tmp_rot);
-        p_chwytak2.setTranslation(new Vector3d(macierz2.m03,macierz2.m13,macierz2.m23));
+        p_chwytak2.setTranslation(new Vector3d(macierz2.m03,macierz2.m13-0.05f,macierz2.m23));
         obrot_animacja4.setTransform(p_chwytak2);
         
         p_naped.get(macierz);         // obrot ramieniem chwytaka
@@ -487,7 +487,7 @@ public void keyTyped(KeyEvent e)
         macierz2.m23=-macierz.m03*sin(-kat)+macierz.m23*cos(-kat);
         p_chwytak1.setTranslation(new Vector3d(0.0f,0.0f,0.0f));
         p_chwytak1.mul(tmp_rot);
-        p_chwytak1.setTranslation(new Vector3d(macierz2.m03,macierz2.m13,macierz2.m23));
+        p_chwytak1.setTranslation(new Vector3d(macierz2.m03,macierz2.m13+0.05f,macierz2.m23));
         obrot_animacja1.setTransform(p_chwytak1);
         
         p_chwytak2.get(macierz);         // obrot ramieniem chwytaka
@@ -496,7 +496,7 @@ public void keyTyped(KeyEvent e)
         macierz2.m23=-macierz.m03*sin(-kat)+macierz.m23*cos(-kat);
         p_chwytak2.setTranslation(new Vector3d(0.0f,0.0f,0.0f));
         p_chwytak2.mul(tmp_rot);
-        p_chwytak2.setTranslation(new Vector3d(macierz2.m03,macierz2.m13,macierz2.m23));
+        p_chwytak2.setTranslation(new Vector3d(macierz2.m03,macierz2.m13-0.05f,macierz2.m23));
         obrot_animacja4.setTransform(p_chwytak2);
         
   
@@ -525,16 +525,8 @@ public void keyTyped(KeyEvent e)
    robot.addKeyListener(robot);
  
  
-        
-
-       
-     
     
     }
-
-   
-
-    
 
    
  }
