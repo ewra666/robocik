@@ -116,7 +116,11 @@ import com.sun.j3d.utils.geometry.Box;
         transformacja_podstawa.addChild(podstawa);
         obrot_animacja3.addChild(transformacja_podstawa);
          
-          
+        Appearance wyglad_niebo = new Appearance();
+        Texture niebo = new TextureLoader("obrazki/clouds.gif",this).getTexture();
+        wyglad_niebo.setTexture(niebo);
+        Sphere kula = new Sphere (7f,Sphere.GENERATE_NORMALS_INWARD | Sphere.GENERATE_TEXTURE_COORDS, wyglad_niebo ); 
+        wezel_scena.addChild(kula); 
           
             
          //TEKSTURY==============================
